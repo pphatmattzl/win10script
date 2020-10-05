@@ -33,8 +33,15 @@ $tweaks = @(
 	"InstallTitusProgs", #REQUIRED FOR OTHER PROGRAM INSTALLS!
 	"InstallAdobe",
 	"Install7Zip",
-	"InstallNotepadplusplus",
+	#"InstallNotepadplusplus",
 	"InstallMediaPlayerClassic",
+	"InstallEdge",
+	"InstallChrome",
+	"InstallWinDirStat",
+	"InstallBulkRenameUtility",
+	"InstallFFmpeg",
+	
+	
 
 	### Windows Apps
 	"DebloatAll",
@@ -156,7 +163,7 @@ $tweaks = @(
 	"UninstallMsftBloat",           # "InstallMsftBloat",
 	"UninstallThirdPartyBloat",     # "InstallThirdPartyBloat",
 	# "UninstallWindowsStore",      # "InstallWindowsStore",
-	# "DisableXboxFeatures",          # "EnableXboxFeatures",
+	"DisableXboxFeatures",          # "EnableXboxFeatures",
 	"DisableAdobeFlash",            # "EnableAdobeFlash",
 	"InstallMediaPlayer", 		# "UninstallMediaPlayer",
 	"UninstallInternetExplorer",  # "InstallInternetExplorer",
@@ -168,6 +175,7 @@ $tweaks = @(
 	#"InstallPDFPrinter",		# "UninstallPDFPrinter",
 	# "UninstallXPSPrinter",          # "InstallXPSPrinter",
 	# "RemoveFaxPrinter",             # "AddFaxPrinter",
+	RemoveYourPhone,
 
 	### Server Specific Tweaks ###
 	# "HideServerManagerOnLogin",   # "ShowServerManagerOnLogin",
@@ -224,6 +232,31 @@ Function InstallNotepadplusplus {
 Function InstallMediaPlayerClassic {
 	Write-Output "Installing Media Player Classic (VLC Alternative)"
 	choco install mpc-hc -y
+}
+
+Function InstallEdge {
+	Write-Output "Installing Microsoft Edge"
+	choco install microsoft-edge -y
+}
+
+Function InstallChrome {
+	Write-Output "Installing Google Chrome"
+	choco install googlechrome -y
+}
+
+Function InstallWinDirStat {
+	Write-Output "Installing WinDirStat"
+	choco install windirstat -y
+}
+
+Function InstallBulkRenameUtility {
+	Write-Output "Installing Bulk Rename Utility"
+	choco install bulkrenameutility -y
+}
+
+Function InstallFFmpeg {
+	Write-Output "Installing FFmpeg"
+	choco install ffmpeg -y
 }
 
 ##########
@@ -1937,7 +1970,7 @@ Function UninstallMsftBloat {
 	Get-AppxPackage "Microsoft.BingSports" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.BingTranslator" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.BingWeather" | Remove-AppxPackage
-	Get-AppxPackage "Microsoft.CommsPhone" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.Commshttps://git.io/JUFJK" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.ConnectivityStore" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.GetHelp" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.Getstarted" | Remove-AppxPackage
@@ -2312,6 +2345,11 @@ Function AddFaxPrinter {
 	Add-Printer -Name "Fax" -DriverName "Microsoft Shared Fax Driver" -PortName "SHRFAX:" -ErrorAction SilentlyContinue
 }
 
+# Remove Your Phone
+Function RemoveYourPhone {
+	Write-Output "Removing Microsoft Your Phone..."
+	Get-AppxPackage *Microsoft.YourPhone* -AllUsers | Remove-AppxPackage
+}
 
 
 ##########
