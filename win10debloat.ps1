@@ -2353,7 +2353,7 @@ Function AddFaxPrinter {
 # Remove Your Phone
 Function RemoveYourPhone {
 	Write-Output "Removing Microsoft Your Phone..."
-	Get-AppxPackage *Microsoft.YourPhone* -AllUsers | Remove-AppxPackage -AllUsers
+	Get-AppxPackage *Microsoft.YourPhone* -AllUsers | Remove-AppxPackage
 }
 
 
