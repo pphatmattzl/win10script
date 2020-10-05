@@ -184,6 +184,7 @@ $tweaks = @(
 	# "DisableCtrlAltDelLogin",     # "EnableCtrlAltDelLogin",
 	# "DisableIEEnhancedSecurity",  # "EnableIEEnhancedSecurity",
 	# "EnableAudio",                # "DisableAudio",
+	RemoveAdobeNotificationClient,
 
 	### Unpinning ###
 	"UnpinStartMenuTiles",
@@ -2519,6 +2520,11 @@ Function DisableDarkMode {
 	Remove-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize -Name AppsUseLightTheme
 }
 
+Function RemoveAdobeNotificationClient {
+    Write-Output "Removing Adobe Update Client"
+	Get-AppxPackage -AllUsers *AdobeNotificationClient* | Remove-AppxPackage -AllUsers
+}
+    
 ##########
 # Debloat Script Additions
 ##########
