@@ -130,7 +130,7 @@ $tweaks = @(
 	# "AddENKeyboard",              # "RemoveENKeyboard",
 	"EnableNumlock",             	# "DisableNumlock",
 	#"EnableDarkMode",				# "DisableDarkMode",
-	"Stop-EdgePDF",
+	#"Stop-EdgePDF",
 
 	### Explorer UI Tweaks ###
 	"ShowKnownExtensions",          # "HideKnownExtensions",
@@ -184,7 +184,7 @@ $tweaks = @(
 	# "DisableCtrlAltDelLogin",     # "EnableCtrlAltDelLogin",
 	# "DisableIEEnhancedSecurity",  # "EnableIEEnhancedSecurity",
 	# "EnableAudio",                # "DisableAudio",
-	RemoveAdobeNotificationClient,
+	"RemoveAdobeNotificationClient",
 
 	### Unpinning ###
 	"UnpinStartMenuTiles",
