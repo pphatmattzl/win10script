@@ -1,4 +1,4 @@
-#     > powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JUpyR')"
+#     > powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JUpdM')"
 
 $tweaks = @(
 	### Require administrator privileges ###
