@@ -30,7 +30,7 @@ $tweaks = @(
 	"RequireAdmin",
 
 
-	"RemoveAdobeNotificationClient",
+	"RemoveAdobeNotificationClient"
 
 )
 
