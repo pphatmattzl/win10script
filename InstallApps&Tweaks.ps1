@@ -187,7 +187,7 @@ $tweaks = @(
 	"RemoveAdobeNotificationClient",
 
 	### Unpinning ###
-	"UnpinStartMenuTiles",
+	"UnpinStartMenuTiles"
 	#"UnpinTaskbarIcons",
 
 	### Auxiliary Functions ###
