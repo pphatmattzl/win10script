@@ -44,7 +44,7 @@ $tweaks = @(
 
 
 	### Windows Apps
-	"DebloatAll",
+	#"DebloatAll",
 
 	### Privacy Tweaks ###
 	"DisableTelemetry",             # "EnableTelemetry",
@@ -72,13 +72,13 @@ $tweaks = @(
 	"DisableSMB1",                # "EnableSMB1",
 	# "DisableSMBServer",           # "EnableSMBServer",
 	# "DisableLLMNR",               # "EnableLLMNR",
-	"SetCurrentNetworkPrivate",     # "SetCurrentNetworkPublic",
-	"SetUnknownNetworksPrivate",  # "SetUnknownNetworksPublic",
+	#"SetCurrentNetworkPrivate",     # "SetCurrentNetworkPublic",
+	#"SetUnknownNetworksPrivate",  # "SetUnknownNetworksPublic",
 	"DisableNetDevicesAutoInst",  # "EnableNetDevicesAutoInst",
 	"DisableCtrldFolderAccess",	# "EnableCtrldFolderAccess",
 	# "DisableFirewall",            # "EnableFirewall",
-	"DisableDefender",            # "EnableDefender",
-	"DisableDefenderCloud",       # "EnableDefenderCloud",
+	#"DisableDefender",            # "EnableDefender",
+	#"DisableDefenderCloud",       # "EnableDefenderCloud",
 	"EnableF8BootMenu",             # "DisableF8BootMenu",
 	#"SetDEPOptOut",                 # "SetDEPOptIn",
 	# "EnableCIMemoryIntegrity",    # "DisableCIMemoryIntegrity",
@@ -158,24 +158,24 @@ $tweaks = @(
 	# "DisableThumbsDB",              # "EnableThumbsDB",
 
 	### Application Tweaks ###
-	"DisableOneDrive",              # "EnableOneDrive",
-	"UninstallOneDrive",            # "InstallOneDrive",
-	"UninstallMsftBloat",           # "InstallMsftBloat",
-	"UninstallThirdPartyBloat",     # "InstallThirdPartyBloat",
+	#"DisableOneDrive",              # "EnableOneDrive",
+	#"UninstallOneDrive",            # "InstallOneDrive",
+	#"UninstallMsftBloat",           # "InstallMsftBloat",
+	#"UninstallThirdPartyBloat",     # "InstallThirdPartyBloat",
 	# "UninstallWindowsStore",      # "InstallWindowsStore",
-	"DisableXboxFeatures",          # "EnableXboxFeatures",
-	"DisableAdobeFlash",            # "EnableAdobeFlash",
-	"InstallMediaPlayer", 		# "UninstallMediaPlayer",
-	"UninstallInternetExplorer",  # "InstallInternetExplorer",
-	"UninstallWorkFolders",       # "InstallWorkFolders",
+	#"DisableXboxFeatures",          # "EnableXboxFeatures",
+	#"DisableAdobeFlash",            # "EnableAdobeFlash",
+	#"InstallMediaPlayer", 		# "UninstallMediaPlayer",
+	#"UninstallInternetExplorer",  # "InstallInternetExplorer",
+	#"UninstallWorkFolders",       # "InstallWorkFolders",
 	#"InstallLinuxSubsystem",      # "UninstallLinuxSubsystem",
 	# "InstallHyperV",              # "UninstallHyperV",
-	"SetPhotoViewerAssociation",    # "UnsetPhotoViewerAssociation",
-	"AddPhotoViewerOpenWith",       # "RemovePhotoViewerOpenWith",
+	#"SetPhotoViewerAssociation",    # "UnsetPhotoViewerAssociation",
+	#"AddPhotoViewerOpenWith",       # "RemovePhotoViewerOpenWith",
 	#"InstallPDFPrinter",		# "UninstallPDFPrinter",
 	# "UninstallXPSPrinter",          # "InstallXPSPrinter",
 	# "RemoveFaxPrinter",             # "AddFaxPrinter",
-	"RemoveYourPhone",
+	#"RemoveYourPhone",
 
 	### Server Specific Tweaks ###
 	# "HideServerManagerOnLogin",   # "ShowServerManagerOnLogin",
@@ -191,8 +191,8 @@ $tweaks = @(
 	#"UnpinTaskbarIcons",
 
 	### Auxiliary Functions ###
-	"WaitForKey"
-	"Restart"
+	#"WaitForKey"
+	#"Restart"
 )
 
 #########
