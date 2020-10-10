@@ -15,7 +15,6 @@ function Unprovision {
 	Remove-AppxProvisionedPackage -Online -PackageName "Microsoft.MixedReality.Portal_2000.19081.1301.0_neutral_~_8wekyb3d8bbwe"
 	Remove-AppxProvisionedPackage -Online -PackageName "Microsoft.MSPaint_2019.729.2301.0_neutral_~_8wekyb3d8bbwe"
 	Remove-AppxProvisionedPackage -Online -PackageName "Microsoft.Office.OneNote_16001.12026.20112.0_neutral_~_8wekyb3d8bbwe"
-  Remove-AppxProvisionedPackage -Online -PackageName Microsoft.ScreenSketch_2019.904.1644.0_neutral_~_8wekyb3d8bbwe
   Remove-AppxProvisionedPackage -Online -PackageName Microsoft.VP9VideoExtensions_1.0.32521.0_x64__8wekyb3d8bbwe
   Remove-AppxProvisionedPackage -Online -PackageName Microsoft.WindowsCamera_2018.826.98.0_neutral_~_8wekyb3d8bbwe
   Remove-AppxProvisionedPackage -Online -PackageName Microsoft.Xbox.TCUI_1.23.28002.0_neutral_~_8wekyb3d8bbwe
